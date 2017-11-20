@@ -1,0 +1,76 @@
+<!--
+CandyCrush
+Your Name: Amlan Das
+Collaborators: Course TA (Discussed layout of arrow control key and supporting CSS)
+-->
+<!DOCTYPE html>
+<html>
+<!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>CryptoCoin</title>
+
+    <!-- Load style sheets -->
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+    <link rel="stylesheet" href="css/mainLayout.css">
+
+    <!--link rel="stylesheet" href="css/mainLayout.css">
+
+    <!-- Use mobile-aware viewport -->
+    <meta name="viewport" content=
+            "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src=
+                    "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js">
+    </script>
+    <script src="js/mainScript.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainContainer" class="container">
+    <div class="dropdown_1">
+        <button id="dropdown_btn_1" onclick="dropdwon_1_Action()" class="dropbtn">Click to choose Reference Coin</button>
+        <div id="Dropdown_1_div" class="dropdown-content">
+            <a href="javascript:HandleBitcoin_1();" id="btc_1">Bitcoin</a>
+            <a href="javascript:HandleEthereal_1();" id="eth_1">Ethereum</a>
+            <a href="javascript:HandleLitecoin_1();" id="ltc_1">Litecoin</a>
+        </div>
+        <p id="selection_1"></p>
+    </div>
+
+    <div></div>
+    <br/><p><p/>
+    <br/><p><p/>
+    <br/><p><p/>
+    <div></div>
+
+    <div class="dropdown_2">
+        <button id="dropdown_btn_2" onclick="dropdwon_2_Action()" class="dropbtn">Click to choose Target Coin</button>
+        <div id="Dropdown_2_div" class="dropdown-content">
+            <a href="javascript:HandleBitcoin_2();" id="btc_2">Bitcoin</a>
+            <a href="javascript:HandleEthereal_2();" id="eth_2">Ethereum</a>
+            <a href="javascript:HandleLitecoin_2();" id="ltc_2">Litecoin</a>
+        </div>
+        <p id="selection_2"></p>
+    </div>
+
+    <br/>
+
+    <button id="compareBtn" onclick="compare()">Compare</button>
+</div>
+
+</body>
+
+</html>
